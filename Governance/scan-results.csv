@@ -1,0 +1,234 @@
+Plugin ID,CVE,CVSS,Risk,Host,Protocol,Port,Name,Synopsis,Description,Solution,See Also,Plugin Output,STIG Severity,CVSS v3.0 Base Score,CVSS Temporal Score,CVSS v3.0 Temporal Score,Risk Factor,BID,XREF,MSKB,Plugin Publication Date,Plugin Modification Date,Metasploit,Core Impact,CANVAS
+10107,,,None,168.63.129.16,tcp,80,HTTP Server Type and Version,A web server is running on the remote host.,"This plugin attempts to determine the type and the version of the
+  remote web server.",n/a,,"The remote web server type is :
+
+Microsoft-IIS/10.0",,,,,None,,,,1/4/00,11/22/19,,,
+10287,,,None,168.63.129.16,udp,0,Traceroute Information,It was possible to obtain traceroute information.,Makes a traceroute to the remote host.,n/a,,"For your information, here is the traceroute from 10.0.2.5 to 168.63.129.16 : 
+10.0.2.5
+168.63.129.16
+
+Hop Count: 1
+",,,,,None,,,,11/27/99,3/6/19,,,
+10539,CVE-1999-0024,5,Medium,168.63.129.16,udp,53,DNS Server Recursive Query Cache Poisoning Weakness,"The remote name server allows recursive queries to be performed
+by the host running nessusd.","It is possible to query the remote name server for third-party
+names.
+
+If this is your internal nameserver, then the attack vector may
+be limited to employees or guest access if allowed.
+
+If you are probing a remote nameserver, then it allows anyone
+to use it to resolve third party names (such as www.nessus.org).
+This allows attackers to perform cache poisoning attacks against
+this nameserver.
+
+If the host allows these recursive queries via UDP, then the
+host can be used to 'bounce' Denial of Service attacks against
+another network or system.","Restrict recursive queries to the hosts that should
+use this nameserver (such as those of the LAN connected to it).
+
+If you are using bind 8, you can do this by using the instruction
+'allow-recursion' in the 'options' section of your named.conf.
+
+If you are using bind 9, you can define a grouping of internal addresses
+using the 'acl' command.
+
+Then, within the options block, you can explicitly state:
+'allow-recursion { hosts_defined_in_acl }'
+
+If you are using another name server, consult its documentation.",http://www.nessus.org/u?c4dcf24a,,,,3.7,,Medium,136;678,CERT-CC:CA-1997-22,,10/27/00,6/27/18,,,
+10663,,3.3,Low,168.63.129.16,udp,67,DHCP Server Detection,"The remote DHCP server may expose information about the associated
+network.","This script contacts the remote DHCP server (if any) and attempts to
+retrieve information about the network layout. 
+
+Some DHCP servers provide sensitive information such as the NIS domain
+name, or network layout information such as the list of the network
+web servers, and so on. 
+
+It does not demonstrate any vulnerability, but a local attacker may
+use DHCP to become intimately familiar with the associated network.","Apply filtering to keep this information off the network and remove
+any options that are not in use.",,"
+Nessus gathered the following information from the remote DHCP server :
+
+  Master DHCP server of this network : 168.63.129.16
+  IP address the DHCP server would attribute us : 10.0.2.5
+  Netmask : 255.255.255.0
+  Router : 10.0.2.1
+  Domain name server(s) : 168.63.129.16
+  Domain name : z3hlcprnypqeddzyj0zvnp022g.bx.internal.cloudapp.net
+  DHCP server(s) identifier : 168.63.129.16
+
+",,,,,Low,,,,5/5/01,3/6/19,,,
+11002,,,None,168.63.129.16,tcp,53,DNS Server Detection,A DNS server is listening on the remote host.,"The remote service is a Domain Name System (DNS) server, which
+provides a mapping between hostnames and IP addresses.","Disable this service if it is not needed or restrict access to
+internal hosts only if the service is available externally.",https://en.wikipedia.org/wiki/Domain_Name_System,,,,,,None,,,,2/13/03,5/16/17,,,
+11002,,,None,168.63.129.16,udp,53,DNS Server Detection,A DNS server is listening on the remote host.,"The remote service is a Domain Name System (DNS) server, which
+provides a mapping between hostnames and IP addresses.","Disable this service if it is not needed or restrict access to
+internal hosts only if the service is available externally.",https://en.wikipedia.org/wiki/Domain_Name_System,,,,,,None,,,,2/13/03,5/16/17,,,
+11219,,,None,168.63.129.16,tcp,53,Nessus SYN scanner,It is possible to determine which TCP ports are open.,"This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.",Protect your target with an IP filter.,,Port 53/tcp was found to be open,,,,,None,,,,2/4/09,3/2/20,,,
+11219,,,None,168.63.129.16,tcp,80,Nessus SYN scanner,It is possible to determine which TCP ports are open.,"This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.",Protect your target with an IP filter.,,Port 80/tcp was found to be open,,,,,None,,,,2/4/09,3/2/20,,,
+11936,,,None,168.63.129.16,tcp,0,OS Identification,It is possible to guess the remote operating system.,"Using a combination of remote probes (e.g., TCP/IP, SMB, HTTP, NTP,
+SNMP, etc.), it is possible to guess the name of the remote operating
+system in use. It is also possible sometimes to guess the version of
+the operating system.",n/a,,"
+Remote operating system : Microsoft Windows 10
+Confidence level : 75
+Method : HTTP
+
+Not all fingerprints could give a match. If you think some or all of
+the following could be used to identify the host's operating system,
+please email them to os-signatures@nessus.org. Be sure to include a
+brief description of the host itself, such as the actual operating
+system or product / model names.
+
+HTTP:Server: Microsoft-IIS/10.0
+
+SinFP:!:
+   P1:B11113:F0x12:W8192:O0204ffff:M1460:
+   P2:B11113:F0x12:W8192:O0204ffff010303080402080affffffff44454144:M1460:
+   P3:B00000:F0x00:W0:O0:M0
+   P4:81000_7_p=80R
+
+ 
+The remote host is running Microsoft Windows 10",,,,,None,,,,12/9/03,3/9/20,,,
+19506,,,None,168.63.129.16,tcp,0,Nessus Scan Information,This plugin displays information about the Nessus scan.,"This plugin displays, for each tested host, information about the
+scan itself :
+
+  - The version of the plugin set.
+  - The type of scanner (Nessus or Nessus Home).
+  - The version of the Nessus Engine.
+  - The port scanner(s) used.
+  - The port range scanned.
+  - Whether credentialed or third-party patch management
+    checks are possible.
+  - The date of the scan.
+  - The duration of the scan.
+  - The number of hosts scanned in parallel.
+  - The number of checks done in parallel.",n/a,,"Information about this scan : 
+
+Nessus version : 8.10.0
+Plugin feed version : 202006032040
+Scanner edition used : Nessus Home
+Scan type : Normal
+Scan policy used : Basic Network Scan
+Scanner IP : 10.0.2.5
+Port scanner(s) : nessus_syn_scanner 
+Port range : default
+Thorough tests : no
+Experimental tests : no
+Paranoia level : 1
+Report verbosity : 1
+Safe checks : yes
+Optimize the test : yes
+Credentialed checks : no
+Patch management checks : None
+CGI scanning : disabled
+Web application tests : disabled
+Max hosts : 30
+Max checks : 4
+Recv timeout : 5
+Backports : None
+Allow post-scan editing: Yes
+Scan Start Date : 2020/6/4 1:59 UTC
+Scan duration : 432 sec
+",,,,,None,,,,8/26/05,12/3/19,,,
+22964,,,None,168.63.129.16,tcp,80,Service Detection,The remote service could be identified.,"Nessus was able to identify the remote service by its banner or by
+looking at the error message it sends when it receives an HTTP
+request.",n/a,,A web server is running on this port.,,,,,None,,,,8/19/07,1/27/20,,,
+24260,,,None,168.63.129.16,tcp,80,HyperText Transfer Protocol (HTTP) Information,Some information about the remote HTTP configuration can be extracted.,"This test gives some information about the remote HTTP protocol - the
+version used, whether HTTP Keep-Alive and HTTP pipelining are enabled,
+etc... 
+
+This test is informational only and does not denote any security
+problem.",n/a,,"
+Response Code : HTTP/1.1 403 Forbidden
+
+Protocol version : HTTP/1.1
+SSL : no
+Keep-Alive : no
+Options allowed : (Not implemented)
+Headers :
+
+  Content-Type: text/html
+  Server: Microsoft-IIS/10.0
+  Date: Thu, 04 Jun 2020 02:04:36 GMT
+  Content-Length: 1233
+  
+Response Body :
+
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Strict//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"">
+<html xmlns=""http://www.w3.org/1999/xhtml"">
+<head>
+<meta http-equiv=""Content-Type"" content=""text/html; charset=iso-8859-1""/>
+<title>403 - Forbidden: Access is denied.</title>
+<style type=""text/css"">
+<!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:""trebuchet MS"", Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+-->
+</style>
+</head>
+<body>
+<div id=""header""><h1>Server Error</h1></div>
+<div id=""content"">
+ <div class=""content-container""><fieldset>
+  <h2>403 - Forbidden: Access is denied.</h2>
+  <h3>You do not have permission to view this directory or page using the credentials that you supplied.</h3>
+ </fieldset></div>
+</div>
+</body>
+</html>
+",,,,,None,,,,1/30/07,11/22/19,,,
+25220,,,None,168.63.129.16,tcp,0,TCP/IP Timestamps Supported,The remote service implements TCP timestamps.,"The remote host implements TCP timestamps, as defined by RFC1323.  A
+side effect of this feature is that the uptime of the remote host can
+sometimes be computed.",n/a,http://www.ietf.org/rfc/rfc1323.txt,,,,,,None,,,,5/16/07,3/6/19,,,
+35450,CVE-2006-0987,5,Medium,168.63.129.16,udp,53,DNS Server Spoofed Request Amplification DDoS,"The remote DNS server could be used in a distributed denial of service
+attack.","The remote DNS server answers to any request.  It is possible to query
+the name servers (NS) of the root zone ('.') and get an answer that
+is bigger than the original request.  By spoofing the source IP
+address, a remote attacker can leverage this 'amplification' to launch
+a denial of service attack against a third-party host using the remote
+DNS server.","Restrict access to your DNS server from public network or reconfigure
+it to reject such queries.",https://isc.sans.edu/diary/DNS+queries+for+/5713,"
+The DNS query was 17 bytes long, the answer is 844 bytes long.
+",,,3.7,,Medium,,,,1/22/09,7/10/18,,,
+45590,,,None,168.63.129.16,tcp,0,Common Platform Enumeration (CPE),"It was possible to enumerate CPE names that matched on the remote
+system.","By using information obtained from a Nessus scan, this plugin reports
+CPE (Common Platform Enumeration) matches for various hardware and
+software products found on a host. 
+
+Note that if an official CPE is not available for the product, this
+plugin computes the best possible CPE based on the information
+available from the scan.",n/a,"http://cpe.mitre.org/
+https://nvd.nist.gov/products/cpe","
+The remote operating system matched the following CPE : 
+
+  cpe:/o:microsoft:windows_10
+
+Following application CPE matched on the remote system :
+
+  cpe:/a:microsoft:iis:10.0
+",,,,,None,,,,4/21/10,5/29/20,,,
+54615,,,None,168.63.129.16,tcp,0,Device Type,It is possible to guess the remote device type.,"Based on the remote operating system, it is possible to determine
+what the remote system type is (eg: a printer, router, general-purpose
+computer, etc).",n/a,,"Remote device type : general-purpose
+Confidence level : 75
+",,,,,None,,,,5/23/11,5/23/11,,,

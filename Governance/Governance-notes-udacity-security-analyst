@@ -1,0 +1,323 @@
+This lesson focuses on the role of security governance. This is what puts the “G” in GRC.
+
+Together, we'll go over:
+
+A high-level overview of what governance means to the organization
+Then will work our way through the most important governance functions, starting with strategic thinking
+Followed by championing security
+Then we’ll spend the rest of our time talking about how governance interacts with operational security controls in:
+
+Designing measurement
+Measurement and reporting
+And finally, policy and procedure management
+Governance is a wide-ranging GRC role with two important functions. First, the governance role plays a large part in creating a bridge between the organization and security. We’ll discuss this in our Strategic Thinking, Championing Security, and Policy and Procedure Management sections. Second, the governance role is responsible for working with operational security stakeholders to measure the effectiveness of existing security controls and remediating any deficiencies. We’ll discuss this part of the role in Designing Measurement and Measurement and Reporting.
+
+//////////////////////
+
+Governance professionals have a tremendous amount of opportunity to influence throughout the organization. They are relied upon to work with business stakeholders to help align security strategy and objectives with business strategy and objectives. They are also relied upon to work with employees throughout the organization to ensure they are kept up-to-date on security policies, procedures, and new and emerging security threats. In this way, governance acts as a bridge between security and the organization.
+
+Governance professionals, however, also play a vital role in ensuring security controls are operating as expected. They do this by examining the expected control’s function and designing tests to see if the control does perform as anticipated. Performing this function consistently can improve an organization’s security posture dramatically by fixing malfunctioning controls before a security event can occur.
+
+/////////////////
+Quiz Question
+
+Which of the following tasks might a Governance professional encounter as part of their everyday activities? Choose all that apply.
+
+- Performing security awareness training
+- Assisting in setting security strategy
+- Measuring effectiveness of security controls
+
+
+//// Strategic Thinking ///
+One way that Governance professionals are able to influence is by helping align business strategy with an operational security strategy. Maybe the best opportunity to do this is through an information security steering committee.
+
+Most security best practice handbooks will describe information security steering committees as vital to demonstrating that the organization is invested in security and aligning security with business goals. It is. However, many large organizations will have a structured process in place for engaging security with less frequent meetings dedicated to the topic of security. For companies that do maintain information security steering committees, they act as a platform for the free flow of information and ideas between the business and security. In this way, security can be informed of any new business objectives or changes to the business, and the business can be kept up-to-date about security initiatives that may require business stakeholder input, like risk management, for example.
+
+The idea is to keep a free flow of information between the business and security to:
+
+Align goals
+Allow the business to provide a certain level of security oversight
+Work with the business to set and approve policy; and
+Keep senior leadership informed of new security risks or security challenges
+Because of the level of information sharing that occurs during steering committee meetings, it’s also important to have the right level of participation. Typically, steering committee members should be in a position to broadly influence and be strategic thinkers.
+
+//////
+
+///// Exercise: Strategic Thinking/////
+
+Your organization, SwiftTech, has an information security steering committee to ensure that the business and security strategies align. Next week is this month's meeting and you have been provided with information related to business strategy and current security strategy (see images below). Please review the information and answer the scenario.
+
+
+[Business Strategy]
+    - Grow customer base and shrink high cost customer
+    interactions by developing a cloud-first product stragegy
+
+    - Offer low / no cost product options instead of offering high touch proofs of concepts (PoCs)
+
+    - React rapidly to customer demands in order to innovate new products and services
+
+[Operations Strategy]
+
+    - Transition on-premise architecture to cloud-based
+    architecture within 18 months
+
+    - Create a common development architecture
+
+    - Improve SDLC and agile development processes
+
+    - Improve business resiliency
+
+[Cybersecurity Goals]
+    - Maintain current levels of Cybersecurity effectiveness
+    - Support Business and Operations strategies
+    - Improve documentation
+    - Improve business resiliency
+
+[Cybersecurity Strategy]
+    - Combine point solutions into a single platform
+    - Reduce overall number of vendors
+    - Create realistic common controls
+
+
+////Answer the following scenario://///
+As part of this month's information security steering committee meeting you know of a proposal that will be made. The proposal is to overhaul and modernize existing network security mechanisms because several of the devices are going to be end-of-life in 12-16 months. Based on what you know about the organization's strategy what might you advise the steering committee? The committee will also want to discuss the existing cybersecurity budget. Based on what you know, what assumptions might you make about the cybersecurity budget?
+
+
+
+///////////////////
+
+Another important governance task is championing security throughout the organization. Because governance professionals are well-versed in the organization’s policies and procedures, they are in a great position to explain those documents to other employees, and that can be done through information security awareness training. That type of training, however, doesn’t have to be solely focused on policies and procedures. This is a great time to bring interesting content to users that can be valuable at work and at home. For instance, you can provide live incident response training, training related to phishing emails or fraud attempts, or live hacking demonstrations. All of these trainings help improve your organization's security posture, reduce overall risk, help protect employees, and can be part of meeting certain compliance requirements.
+
+
+//Quiz: Championing Security//
+
+Quiz Question
+
+What are the reasons that a Governance professional might provide security awareness training?
+
+- To meet compliance requirements
+- To reduce risk
+- Strengthen Security controls
+- Protect employees
+
+
+/////Answer the following scenario://///
+
+
+An essential part of the Governance professional's role is to participate in end-user or employee security training efforts. Phishing campaigns are one the most highly used attacks for bad actors when attempting to infiltrate an organization. As a result, many Governance professionals spend large amounts of their time developing training exercises in an effort to defeat phishing campaigns.
+
+In this exercise, you have been tasked with creating an email that can be sent to all of your organization's users to train them on the pitfalls of phishing. Think about what you might say in an email to corporate users about phishing and respond below.
+
+You should have at least two paragraphs in your e-mail where you:
+
+Define phishing
+Describe examples of phishing, what do they look like?
+Why is it important?
+What should you do if you suspect a phishing e-mail in your inbox?
+
+
+////Sample E-mail Example///
+To all company associates:
+
+Phishing campaigns remain one of the most highly used techniques by bad actors seeking to gain unauthorized access to our organization and its assets. As a reminder, phishing attempts occur when a bad actor sends email messages attempting to trick users into clicking on a malicious hyperlink or provide personal information like corporate credentials in a web form. More often than not, these emails are made to appear as if they are coming from well-known organizations, companies our organization works with, or from colleagues.
+
+It is important to scrutinize every email. Often phishing emails have spelling mistakes, look slightly different in appearance, or originate come from unexpected domains but sometimes phishing emails look perfectly harmless. So, you should also scrutinize what the email is asking you to do. Does it seem out-of-the-ordinary? Is it something that you wouldn't ordinarily do outside of work (e.g. send money to someone unexpectedly)? If you receive a phishing email or just aren't sure please contact the information security department at InfoSec@domain.com.
+
+Thank you,
+
+Company Governance Professional
+
+
+
+//////
+Besides acting as a conduit between the organization and security, governance professionals play an important role in measuring the effectiveness of operational security controls. They measure whether controls are functioning as expected. Governance does not concern itself initially with how the control came to be --- meaning what risk management decision or compliance requirement the control is intended to address. Governance does concern itself with the intended function of the control and whether the control meets that intent.
+
+This is done by examining the control in function and in time. All controls have an intended function and an intended time with which they operate. It could be that controls are intended to operate constantly, but it could be that controls are intended to operate at specific intervals. Take, for instance, a firewall. The firewall may be performing a number of intended functions, but let’s look at one function. Perhaps the firewall is meant to block any inbound other than traffic on port 443. The time element isn’t specified, so we’ll assume it is intended to always operate in the prescribed manner. The function is that it blocks traffic over port 443. What if the firewall allowed traffic on ports 443 and 8080? It might meet our time element but fails the test of function. This is how governance professionals should measure control effectiveness. Discover the control’s intended function and time and test to ensure that the control operates in that way.
+
+
+////////Quiz: Designing Measurement///////////
+
+Quiz Question
+
+Which of the below might you consider when designing a measurement for a security control?
+
+- The risk the controll addresses
+- The requirement of time
+
+
+
+//////////////
+Earlier in the course, we discussed the importance of GRC in mitigating potential security breaches. Measuring the effectiveness of controls is a critical part of that equation. Many organizations have 100’s of security controls, and a single failure or misconfiguration can have a devastating impact.
+
+This also means, however, that you must make decisions about how best to test controls given limited resources and limited time. While you should measure controls in function and in time, you must also consider factors that might limit your ability to test as comprehensively as you might like. Factors like your testing budget, the amount of time you have to test, organizational strategy, and the purpose of your test should all be taken into consideration when designing the appropriate test.
+
+Control tests can be anything that you desire limited only by the considerations we mentioned above and the need to measure for the specific function and time required by the control you plan to assess. Keep in mind that as you assess security controls, there are certain benefits that should be produced for the organization. Control measurement should be performed in an effort to:
+
+Assess existing security tools
+Improve the organization’s security posture
+Meet certain compliance obligations
+It’s important that you record each of your control measurement activities, the test performed, when the test was performed, and the outcome. You should also use control measurement documentation to meet with internal stakeholders to develop plans of action and milestones for remediation, assuming certain controls are not functioning as anticipated.
+
+
+////Quiz: Measurement and Reporting////
+
+Quiz Question
+
+A compliance standard dictates that your organization requires every visitor to your office location to sign in and sign out using a visitor management log. To assess the effectiveness of the control, previous Governance team members would review the log once a month to make sure visitors are signing in and out. Is this an effective control measurement?
+
+
+
+- yes
+- no
+
+
+
+///Quiz Question
+
+You have just discovered that one of your critical security controls is not functioning correctly. You have created a report on the control and your findings which show that the control is not operating as expected. Who should you share the report with initially? Check all that apply?
+
+IT Steering Committe or Risk Management Committe
+Control owner
+The organization's Board of Directors
+Customers
+
+
+//////Exercise: Measurement and Reporting
+Answer the questions below related to control measurement and reporting deficiencies.
+
+
+Quiz Question
+
+Your organization uses a user behavioral analytics platform to aid your security team in identifying potential threats. What type of control is user behavior analytics?
+
+-Preventive
+-Detective
+-Corrective / Responsive
+-None of the above
+
+
+////Quiz Question
+
+Your organization employs VLANs on its routers to ensure that users/traffic from certain parts of your network infrastructure are unable to travel to other parts of your network infrastructure. What type of control are VLANs?
+
+-Preventive
+-Detective
+-Corrective
+-None of the above
+
+/////Answer the following scenario:
+Your company maintains a vulnerability management procedure which states, "vulnerabilities will be remediated on the following schedule (High - 30 days, Medium 60 days, Low 120 days)". How would you design a test to ensure that the control is functioning as expected?
+
+
+
+
+
+///Answer the following scenario:
+Your company has committed to updating your Information Security Policy at least 1 time annually and ensuring that it is reviewed and approved by senior leadership. What mechanism might you use to ensure the control is working as expected?
+
+
+///Answer the following scenario:
+Your organization is undergoing a lot of transformation as it relates to its network infrastructure. As a result, the information security group has created a security control to ensure that no unauthorized changes are made to any firewall rules. Before a rule is changed or a new rule is implemented, the change must go through a change management process where each change is given formal approval. How would you design a test to ensure that every firewall rule change or addition has gained change management approval? Can you think of any way to automate or enhance your method?
+
+
+
+///Quiz Question
+
+Which of the following might you consider before designing a corrective action plan for an ineffective control? Check all that apply.
+
+
+- budget
+- organization stragegy
+- security risk
+- operational risk
+- level of effort
+- control owner input
+
+
+
+///////Answer the following scenario:
+Recently, you spent time assessing the effectiveness of several of your organization's cybersecurity controls. One of the controls you assessed was your organization's full disk encryption (FDE) platform. The platform is intended to ensure that all of your organization's laptop hard drives are encrypted. You sampled several work order tickets for the provisioning of new laptops, and all of them showed that hard drive encryption was implemented. You decided to go a step further and ask for a report from your laptop administrators. The report shows that about 15% of laptops are not currently encrypted. Is the control effective? Are there additional questions you might ask? What would you report about this control?
+
+////////////////////////////
+
+
+Policies and procedures make up the backbone of successful security organizations. Policies set organizational direction and procedures explain exactly how critical tasks are to be executed.
+
+Because policies are intended to set direction, they have a couple of key characteristics. First, most policies should be determinative or use determinative language. They should use words like shall, shall not, must, most not, or will. They do this to very clearly tell readers what is and is not permitted behavior. Clearly telling readers about expected behaviors is the second characteristic. Policies are essentially listings of permitted or un-permitted behaviors that serve as security controls themselves. Just like a firewall is intended to block malicious traffic, policies are intended to be preventive controls telling users that certain actions are or are not allowed.
+
+Procedures, on the other hand, are meant to be tactical documents that tell employees how to perform specific tasks. Many times, procedures are actually written by non-GRC personnel to support day-to-day activities. What is important about procedures is that they sometimes support policy. In fact, nearly every policy statement should have a procedure which details how to accomplish the behavior the policy wishes to enforce. For instance, if an Information Security Policy requires that user permissions are strictly controlled, there should be a procedure as to how the organization goes about controlling those permissions.
+
+While non-GRC personnel often write procedures, GRC staff do write a tremendous amount of policy and write and assess policies and procedures. When writing or assessing a policy, governance professionals should keep 4 things in mind. Policies should be:
+
+Clear in purpose
+Clear in scope
+Non-tactical and concise; and
+Determinative
+Like any control, governance professionals should ensure that procedures meet the needs of a control objective in function and in time.
+
+
+//////////Quiz: Policy and Procedure
+
+Quiz Question
+
+Which of the following are examples of permissive / passive language?
+
+
+- shall
+- May
+- must
+- can
+- shall not
+- might
+
+
+
+
+////Quiz Question
+
+Policies typically use what kind of language?
+
+
+- permissive / passive
+- determinative
+
+
+
+////Answer the following scenario:
+It is day one at your new job and you have been asked to review the organization's end-user / acceptable use policy in preparation for an upcoming external assessment. Unfortunately, you can see that the policy has a number of issues right away. To begin with, the policy doesn't have a policy statement and it isn't clear who the policy affects. There are also some sections that are too passive or are overly detailed.
+
+- Write a policy statement that clearly states what the policy is for
+
+- Create a scope section and statement
+
+- Make corrections to the remaining excerpts to make the policy audit ready
+
+
+/////Together, we went over:
+
+A high level overview of what governance means to the organization
+Then will work our way through the most important governance functions, starting with strategic thinking
+Followed by championing security
+Then we spent the rest of our time talking about how governance interacts with operational security controls in:
+
+Designing measurement
+Measurement and reporting
+And finally, policy and procedure management
+Congratulations on completing the Governance lesson. In this lesson, we discussed how Governance has a wide-ranging ability to influence the organization by thinking strategically and interfacing with business stakeholders during Information Security Steering Committee meetings and championing security throughout the organization through policy and procedure development and training efforts. We also learned about the critical day-to-day responsibilities that governance professionals have in measuring the effectiveness of security controls and working with stakeholders to remediate any deficiencies the controls might have.
+
+
+In this project, you will apply the skills you have acquired to analyze data provided about a fictional technology company and create fundamental components of the company’s GRC program.
+
+In particular, you will identify potentially relevant compliance obligations, modify a risk management policy to meet the company’s specific needs, assess risks apparent in the company’s infrastructure leveraging common risk management frameworks, and develop governance activities to ensure security controls are operating as expected.
+
+The following materials will be provided in order to complete the project:
+
+A narrative describing the company, its business goals, and appetite for risk
+Network and data flow diagrams
+A partial cybersecurity risk management policy
+A partial risk management framework.
+The final implementation of these project components will showcase your ability to interpret business strategy as a function of risk management and develop primary GRC components to enhance the business’ security posture.
+
+
+Rubric
+Your project will be evaluated by a Udacity code reviewer according to the project rubric. Please make sure to re-review the rubric for detailed project requirements prior to submission.
